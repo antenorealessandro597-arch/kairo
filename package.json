@@ -1,0 +1,22 @@
+{
+  "name": "kairo-control",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Kairo Control 4.0 - modern Windows remote control with local mirror and optional internet relay",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node check.js",
+    "selftest": "node selftest.js",
+    "relay": "node relay/server.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "express": "4.21.2",
+    "selfsigned": "5.5.0",
+    "screenshot-desktop": "1.15.6",
+    "sharp": "0.33.5",
+    "ws": "8.18.0",
+    "koffi": "3.3.1"
+  }
+}
